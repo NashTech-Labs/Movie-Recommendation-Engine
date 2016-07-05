@@ -18,3 +18,10 @@ lazy val root = (project in file(".")).
     name := "movie_recommendation",
     libraryDependencies ++= Seq(spark, graphX, mlLib)
   )
+
+libraryDependencies ++=  Seq(
+  "com.typesafe.akka" % "akka-actor_2.10" % "2.3.15"  ,
+  "com.typesafe.akka" %% "akka-http-spray-json-experimental" % "2.0.3",
+  "com.typesafe.akka" %% "akka-stream-experimental" % "2.0.3",
+  "com.typesafe.akka" %% "akka-http-core-experimental" % "2.0.3"
+)
